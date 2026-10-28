@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodeCraft Python Workshop</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>CodeCraft Python Workshop</h1>
+    <p>Elevate Your Coding Skills with Python: From Basics to Building</p>
+  </header>
+  <br>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#schedule">Schedules</a></li>
+      <li><a href="#register">Registration</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About the Event</h2>
+    <article>
+      <h3>Foundations of Python</h3>
+      <p>Led by Dr. Anya Sharma, this session covers fundamental syntax and data structures.</p>
+    </article>
+    <article>
+      <h3>Web Scraping with Beautiful Soup</h3>
+      <p>Prof. Ben Carter teaches how to extract data from the web using Python.</p>
+    </article>
+  </section>
+  <!-- About Section End -->
+  <br>
+
+  <!-- Schedule Section -->
+  <section id="schedule">
+    <h2>Event Schedule</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Activity</th>
+          <th>Venue</th>
+          <th>Person in Charge</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8:00 AM - 9:00 AM</td>
+          <td>Registration and Welcome</td>
+          <td>Main Entrance</td>
+          <td>Admin Team</td>
+        </tr>
+        <tr>
+          <td>9:00 AM - 10:00 AM</td>
+          <td>Keynote: The Future of Python</td>
+          <td>Auditorium A</td>
+          <td>Dr. Anya Sharma</td>
+        </tr>
+        <tr>
+          <td>10:00 AM - 11:30 AM</td>
+          <td>Session 1: Python Basics</td>
+          <!-- Use of rowspan: Auditorium A spans 2 consecutive sessions -->
+          <td rowspan="2">Auditorium A</td>
+          <td>Dr. Anya Sharma</td>
+        </tr>
+        <tr>
+          <td>11:30 AM - 1:00 PM</td>
+          <td>Session 2: Advanced Data Handling</td>
+          <td>Prof. Ben Carter</td>
+        </tr>
+        <tr>
+          <td>1:00 PM - 2:00 PM</td>
+          <!-- Use of colspan: Lunch Break spans across Activity, Venue, and Person in Charge -->
+          <td colspan="3">Lunch Break</td>
+        </tr>
+        <tr>
+          <td>2:00 PM - 3:30 PM</td>
+          <td>Session 3: Data Science Crash Course</td>
+          <td>Room 201</td>
+          <td>Dr. Sarah Lee</td>
+        </tr>
+        <tr>
+          <td>3:30 PM - 4:30 PM</td>
+          <td>Closing & Certificate Ceremony</td>
+          <td>Auditorium A</td>
+          <td>Organising Committee</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <br>
+
+  <!-- Registration Section -->
+  <section id="register">
+    <h2>Registration Form</h2>
+    
+    <form action="register.html" method="post">
+      <!-- Text Input: Full Name -->
+      <div>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+      <br>
+
+      <!-- Text Input: Matric Number -->
+      <div>
+        <label for="matric">Matric Number:</label><br>
+        <input type="text" id="matric" name="matric" required>
+      </div>
+      <br>
+
+      <!-- Text Input: E-mail -->
+      <div>
+        <label for="email">E-mail Address:</label><br>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <br>
+
+      <!-- Drop-down list: Programme or Faculty -->
+      <div>
+        <label for="faculty">Programme / Faculty:</label><br>
+        <select id="faculty" name="faculty" required>
+          <option value="">-- Please Select --</option>
+          <option value="fskm">Faculty of Computer & Mathematical Sciences</option>
+          <option value="fke">Faculty of Electrical Engineering</option>
+          <option value="fkm">Faculty of Mechanical Engineering</option>
+          <option value="fpb">Faculty of Business & Management</option>
+        </select>
+      </div>
+      <br>
+
+      <!-- Radio Buttons: Year of Study (Sharing the same name "year") -->
+      <div>
+        <label>Year of Study:</label><br>
+        <input type="radio" id="year1" name="year" value="1" required>
+        <label for="year1">Year 1</label>
+
+        <input type="radio" id="year2" name="year" value="2">
+        <label for="year2">Year 2</label>
+
+        <input type="radio" id="year3" name="year" value="3">
+        <label for="year3">Year 3</label>
+
+        <input type="radio" id="year4" name="year" value="4">
+        <label for="year4">Year 4</label>
+      </div>
+      <br>
+
+      <!-- Checkboxes: Sessions to Join -->
+      <div>
+        <label>Sessions to Join:</label><br>
+        <input type="checkbox" id="session1" name="sessions" value="Session 1">
+        <label for="session1">Session 1: Python Basics</label><br>
+
+        <input type="checkbox" id="session2" name="sessions" value="Session 2">
+        <label for="session2">Session 2: Advanced Data Handling</label><br>
+
+        <input type="checkbox" id="session3" name="sessions" value="Session 3">
+        <label for="session3">Session 3: Data Science Crash Course</label>
+      </div>
+      <br>
+
+      <!-- Submit Button -->
+      <div>
+        <input type="submit" value="Register Now">
+      </div>
+    </form>
+  </section>
+  <br>
+
+  <!-- Footer -->
+  <footer>
+    <p>Organised by the CodeCraft Faculty Alumni Association.</p>
+    <p>All rights reserved &copy; 2024 CodeCraft Faculty Alumni Association.</p>
+  </footer>
+
+</body>
+</html>
