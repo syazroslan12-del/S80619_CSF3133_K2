@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile PAge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            padding: 8px 12px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        form div {
+            margin-bottom: 12px;
+        }
+        header, nav, section, article, footer {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Semantic Tag: Header -->
+    <header>
+        <h1>My Profile :3 </h1>
+        <p>Welcome to My Profile!</p>
+    </header>
+
+        <!-- Semantic Tag: Article -->
+        <article>
+            <h2>Personal Information</h2>
+            <!-- Table with 4 rows and 3 columns -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Occupation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ahmad Zaki</td>
+                        <td>25</td>
+                        <td>Web Designer</td>
+                    </tr>
+                    <tr>
+                        <td>Siti Sarah</td>
+                        <td>28</td>
+                        <td>Fashion Designer</td>
+                    </tr>
+                    <tr>
+                        <td>Abu Huzaifah</td>
+                        <td>22</td>
+                        <td>Student</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+        <h2>Form</h2>
+        <!-- Form -->
+        <form action="#" method="post">
+            <!-- Text Input: Name -->
+            <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <!-- Text Input: Email -->
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Radio Buttons: Gender -->
+            <div>
+                <label>Gender:</label><br>
+                <input type="radio" id="Man" name="gender" value="Man">
+                <label for="Man">Man</label>
+                <input type="radio" id="woman" name="gender" value="woman">
+                <label for="woman">Woman</label>
+            </div>
+
+            <!-- Checkboxes: Favorite Hobbies -->
+            <div>
+                <label>Favorite Hobbies:</label><br>
+                <input type="checkbox" id="membaca" name="hobby" value="Membaca">
+                <label for="membaca">Watching kdrama</label><br>
+                <input type="checkbox" id="sukan" name="hobby" value="Bersukan">
+                <label for="sukan">Engaging in sports</label><br>
+                <input type="checkbox" id="muzik" name="hobby" value="Mendengar Muzik">
+                <label for="muzik">Listening to music</label>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit">Send !</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Semantic Tag: Footer -->
+    <footer>
+        <hr>
+        <p>&copy; 2026 All Rights Reserved - Personal Profile Page</p>
+    </footer>
+
+</body>
+</html>
