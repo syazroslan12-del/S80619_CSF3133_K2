@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interative Contact Form</title>
+
+        <style>
+            body {
+                font-family: Arial;
+                margin: 30px;
+                background-colour: #f2f2f2;
+            }
+
+            .header {
+                background-color: #1456a0;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+            
+            .contact, .calculator {
+                background-color: white;
+                padding: 20px;
+                margin-top: 15px;
+                border: 1px solid #ccc;
+            }
+
+            input, button {
+                padding: 8px;
+                margin: 8px 0;
+            }
+
+            button {
+                background-color: #1456a0;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+
+            .footer {
+                background-color: #16a085;
+                color: white;
+                padding: 15px;
+                text-align: center;
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <div class = "header">
+            <h1>My Website</h1>
+            <span>Welcome to Our Website !</span>
+        </div>
+
+        <!--Contact Form-->
+        <div class = "contact">
+            <h2>Contact Form</h2>
+
+            <form>
+                Email:
+                <input type="email" placeholder="Enter your email" required>
+                <br>
+
+                Preferred Contact Date:
+                <input type="date">
+                <br>
+
+                Satisfaction:
+                <input type="range" min="1" max="10">
+                <br>
+
+                <button type="sumbmit">Submit</button>
+            </form>
+        </div>
+
+        <!--calculator-->
+        <div class="calculator">
+            <h2>Simple Calculator</h2>
+
+            Number 1:
+            <input type="number" id="num1">
+            <br>
+
+            Number 2:
+            <input type="number" id="num2">
+            <br>
+
+            <button onclick="calculate()">Calculate</button>
+
+            <h3>Sum: <span id="result">0</span></h3>
+        </div>
+
+        <!--FOoter-->
+        <div class="footer">
+            <p>Contact: mywebsite@gmail.com</p>
+            <p>&copy; 2026 My Website. All Rights Reserved.</p>
+        </div>
+
+        <script>
+            function calculate() {
+                let num1 = Number(document.getElementById("num1").value);
+                let num2 = Number(document.getElementById("num2").value);
+
+                let sum = num1 + num2;
+
+                document.getElementById("result").innerHTML = sum;
+            }
+        </script>
+
+    </body>
+</html>
